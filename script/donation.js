@@ -14,6 +14,11 @@ document.getElementById('add-money').addEventListener('click', function(event) {
     const top_amount_int = parseInt(top_amount);
     const new_total = top_amount_int + con_amount1;
     document.getElementById('total-amount').innerText = new_total;
+
+    const activity = document.getElementById("activity");
+    const p = document.createElement("p");
+    p.innerText = `${Amount1} TAKA is donated for noakhali at ${new Date().toLocaleTimeString()}`;
+    activity.appendChild(p);
 });
 document.getElementById('add-money2').addEventListener('click', function(event) {
     event.preventDefault();
@@ -31,6 +36,11 @@ document.getElementById('add-money2').addEventListener('click', function(event) 
     const top_amount_int = parseInt(top_amount);
     const new_total = top_amount_int + con_amount2;
     document.getElementById('total-amount').innerText = new_total;
+
+    const activity = document.getElementById("activity");
+    const p = document.createElement("p");
+    p.innerText = `${Amount2} TAKA is donated for feni at ${new Date().toLocaleTimeString()}`;
+    activity.appendChild(p);
 });
 document.getElementById('add-money3').addEventListener('click', function(event) {
     event.preventDefault();
@@ -48,4 +58,9 @@ document.getElementById('add-money3').addEventListener('click', function(event) 
     const top_amount_int = parseInt(top_amount);
     const new_total = top_amount_int + con_amount3;
     document.getElementById('total-amount').innerText = new_total;
+
+    const activity = document.getElementById("activity");
+    const p = document.createElement("p");
+    p.innerText = `${Amount3} TAKA is donated for quota movement at ${new Date().toLocaleTimeString()}`;
+    activity.appendChild(p);
 });
